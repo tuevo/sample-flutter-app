@@ -1,14 +1,14 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/models/english_today.dart';
-import 'package:flutter_application_1/pages/control_page.dart';
-import 'package:flutter_application_1/utils/random.dart';
-import 'package:flutter_application_1/values/app_assets.dart';
-import 'package:flutter_application_1/values/app_colors.dart';
-import 'package:flutter_application_1/values/app_styles.dart';
-import 'package:flutter_application_1/values/shared_keys.dart';
-import 'package:flutter_application_1/widgets/app_button.dart';
+import 'package:sample_flutter_app/models/english_today.dart';
+import 'package:sample_flutter_app/pages/control_page.dart';
+import 'package:sample_flutter_app/utils/random.dart';
+import 'package:sample_flutter_app/values/app_assets.dart';
+import 'package:sample_flutter_app/values/app_colors.dart';
+import 'package:sample_flutter_app/values/app_styles.dart';
+import 'package:sample_flutter_app/values/shared_keys.dart';
+import 'package:sample_flutter_app/widgets/app_button.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class HomePage extends StatefulWidget {

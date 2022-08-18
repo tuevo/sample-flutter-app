@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/pages/home_page.dart';
-import 'package:flutter_application_1/values/app_assets.dart';
-import 'package:flutter_application_1/values/app_colors.dart';
-import 'package:flutter_application_1/values/app_styles.dart';
+import 'package:sample_flutter_app/pages/home_page.dart';
+import 'package:sample_flutter_app/values/app_assets.dart';
+import 'package:sample_flutter_app/values/app_colors.dart';
+import 'package:sample_flutter_app/values/app_styles.dart';
 
 class LandingPage extends StatelessWidget {
   const LandingPage({Key? key}) : super(key: key);

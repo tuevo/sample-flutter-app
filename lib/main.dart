@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/app_fonts.dart';
-import 'package:flutter_application_1/app_styles.dart';
-import 'package:flutter_application_1/app_ui.dart';
-import 'package:flutter_application_1/pages/landing_page.dart';
+import 'package:sample_flutter_app/app_fonts.dart';
+import 'package:sample_flutter_app/app_styles.dart';
+import 'package:sample_flutter_app/app_ui.dart';
+import 'package:sample_flutter_app/pages/landing_page.dart';
 
 void main(List<String> args) {
   runApp(const App());
