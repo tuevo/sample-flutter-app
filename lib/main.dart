@@ -1,12 +1,14 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:sample_flutter_app/app_fonts.dart';
 import 'package:sample_flutter_app/app_styles.dart';
 import 'package:sample_flutter_app/app_ui.dart';
 import 'package:sample_flutter_app/pages/landing_page.dart';
 
-void main() {
+Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load();
   return runZonedGuarded(() async {
     runApp(const App());
   }, (error, stack) {
