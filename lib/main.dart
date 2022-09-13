@@ -1,11 +1,20 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:sample_flutter_app/app_fonts.dart';
 import 'package:sample_flutter_app/app_styles.dart';
 import 'package:sample_flutter_app/app_ui.dart';
 import 'package:sample_flutter_app/pages/landing_page.dart';
 
-void main(List<String> args) {
-  runApp(const App());
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load(fileName: '.env');
+  return runZonedGuarded(() async {
+    runApp(const App());
+  }, (error, stack) {
+    print(stack);
+    print(error);
+  });
 }
 
 class App extends StatelessWidget {
